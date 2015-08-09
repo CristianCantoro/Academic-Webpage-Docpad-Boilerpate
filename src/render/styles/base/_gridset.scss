@@ -1,3 +1,4 @@
+@charset "UTF-8";
 // == == == == == == == == == == == == == == == == == == == == == == == == == */
 // Grid
 // http://responsablecss.com/grid
@@ -29,6 +30,7 @@
 //    `:before` to contain the top-margins of child elements.
 //
 // == == == == == == == == == == == == == == == == == == == == == == == == == */
+
 @mixin clearfix(){
     /*
      * For IE 6/7 only

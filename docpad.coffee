@@ -13,7 +13,7 @@ docpadConfig = {
 		site:
 			# The production url of our website
 			owner: "Lello M. Mascetti"
-			url: "http://ar.go:8080"
+			url: "http://localhost:9778"
 			email: 'me@email.it'
 
 			# Here are some old site urls that you would like to redirect from
@@ -115,7 +115,7 @@ docpadConfig = {
 
 	# Port
 	# Use to change the port that DocPad listens to
-	port: 8080
+	port: 9778
 
 	# =================================
 	# Special Custom collections of pages
@@ -158,7 +158,7 @@ docpadConfig = {
 			maxAge: false  # default
 			templateData:
 				site:
-					url: 'http://ar.go:8080'
+					url: 'http://localhost:9778'
 		deploy: # change the name here if you have other environments
 			maxAge: true
 			plugins:

@@ -21,7 +21,8 @@ body,
 }
 
 .main-container {
-    @extend .container; //get clearfix
+    //@extend .container; //get clearfix
+    @include clearfix();
     @include row($gutter_width);
 
     position: relative;
@@ -127,7 +128,8 @@ footer.main-container {
 
 @include gs-media(m) {
     .main-container {
-        @extend .container; //get clearfix
+        //@extend .container; //get clearfix
+        @include clearfix();
         @include row(0);
     }
 

@@ -38,7 +38,7 @@ chmod -R og+Xr out
 find . -type f -name '*.DS_Store' -ls -delete
 #rsync $NFLAG -rvzp --size-only --delete --exclude-from="$DIR/.deployignore" "${DIR}/${DEPLOY_SOURCE_DIR}" "${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:${DEPLOY_DEST_DIR}"
 echo -n " ...done"
-echo "Performinf transfer to server"
+echo "Performing transfer to server"
 echo ""
 rsync $NFLAG -rvzp  $SFLAG --delete --exclude-from="$DIR/.deployignore" "${DIR}/${DEPLOY_SOURCE_DIR}" "${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:${DEPLOY_DEST_DIR}"
 touch src/layouts/*
